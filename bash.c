@@ -36,6 +36,10 @@ int main(void)
 				argv[0] = add_path(argv[0], argv, argc, buf);
 				exec(argv, buf, argc, count);
 			}
+			else
+			{
+				free_grid(argv, argc);
+			}
 			count++;
 		}
 	}
