@@ -14,6 +14,9 @@ int main(void)
 	int argc = 0, characters = 0, count = 1;
 	size_t buf_size = 0;
 
+	if (isatty(STDIN_FILENO) != 1)
+		non_interactive(buf, argv, buf_size);
+
 	while (EOF)
 	{
 		_puts("#cisfun$ ");
@@ -23,7 +26,7 @@ int main(void)
 		{
 			fflush(stdin);
 			free(buf);
-			exit(0);
+			exit(127);
 		}
 		else
 		{
@@ -37,9 +40,8 @@ int main(void)
 				exec(argv, buf, argc, count);
 			}
 			else
-			{
 				free_grid(argv, argc);
-			}
+
 			count++;
 		}
 	}
