@@ -1,0 +1,26 @@
+.TH Simple Shell 2 "August 2019" "0.1" "Simple Shell man"
+.SH NAME
+Simple shell \- Manual simple shell
+.SH SYNOPSIS
+.B sh ./shell
+#cisfun$
+.SH DESCRIPTION
+This document describes how to execute the ./shell file and its functionalities.
+.LP
+.BR Example
+.LP
+First we must compile our code with the following flags.
+.LP
+gcc -Wall -Werror -Wextra -pedantic *.c -o shell
+.LP
+and next execute the file shell.
+.LP
+.br
+user@localhost:~/$ ./shell
+.br
+#cisfun$
+.LP
+The command ./shell executes a new shell
+.SH FIELDS
+This part of the document describes the functionality of each file.
+
