@@ -27,5 +27,5 @@ void non_interactive(char *buf, char **argv, size_t buf_size)
 			free_grid(argv, argc);
 	}
 	free(buf);
-	exit(127);
+	exit(0);
 }
