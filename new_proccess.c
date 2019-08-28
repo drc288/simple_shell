@@ -23,7 +23,7 @@ void new_proccess(char **argv, char *buf, int argc, int count)
 
 		free_grid(argv, argc);
 		free(buf);
-		exit(1);
+		exit(0);
 	}
 	else
 	{

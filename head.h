@@ -34,5 +34,6 @@ char *check_access(char *, char *, char *, char *);
 char *add_path(char *,  char **, int, char *);
 char *_strcat(char *, char *);
 void sys_error(char **, int, char *);
+void non_interactive(char *,char **, size_t);
 
 #endif
