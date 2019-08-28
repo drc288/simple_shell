@@ -5,6 +5,7 @@
  * @argv: pointer to array.
  * @buf: if error free
  * @argc: worlds.
+ * @count: history bash.
  */
 
 void exec(char **argv, char *buf, int argc, int count)
