@@ -23,7 +23,7 @@ int main(void)
 		{
 			fflush(stdin);
 			free(buf);
-			exit(1);
+			exit(0);
 		}
 		else
 		{
