@@ -16,7 +16,7 @@ int main(void)
 
 	while (EOF)
 	{
-		printf("#cisfun$ ");
+		_puts("#cisfun$ ");
 		fflush(stdin);
 		characters = getline(&buf, &buf_size, stdin);
 		if (characters  == -1)
