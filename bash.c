@@ -22,7 +22,7 @@ int main(void)
 		_puts("#cisfun$ ");
 		fflush(stdin);
 		characters = getline(&buf, &buf_size, stdin);
-		if (characters  == -1)
+		if (characters  == EOF)
 		{
 			fflush(stdin);
 			free(buf);
